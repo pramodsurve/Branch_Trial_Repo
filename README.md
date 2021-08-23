@@ -2,3 +2,5 @@
 To play with branches in git
 
 These are changes in the newer branch
+
+This is the best description.
