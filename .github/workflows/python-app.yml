@@ -17,6 +17,15 @@ jobs:
       with:
         repository: pramodsurve/Branch_Trial_Repo
         token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Python
+      uses: actions/setup-python@2
+      with:
+        python-version: '3.x'
+        
+    - name: Install Pandas
+      run:
+        python -m pip install pandas
 
     - name: Hello World
       run: python Test.py
