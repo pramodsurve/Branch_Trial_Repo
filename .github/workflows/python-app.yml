@@ -17,8 +17,7 @@ jobs:
       with:
         repository: pramodsurve/Branch_Trial_Repo
         token: ${{ secrets.GITHUB_TOKEN }}
-        path: ${{ env.DEVOPS_DIR }}
 
     - name: Hello World
-      run: python ${{ env.DEVOPS_DIR }}/test.py
+      run: python test.py
       shell: sh
