@@ -20,7 +20,7 @@ jobs:
 
     - name: Install Pandas
       run:
-        python pip install pandas datetime
+        python -m pip install pandas datetime
 
     - name: Hello World
       run: python Test.py
