@@ -19,5 +19,5 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Hello World
-      run: python test.py
+      run: python Test.py
       shell: sh
