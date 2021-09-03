@@ -15,4 +15,4 @@ df = pd.DataFrame(cars, columns= ['Brand', 'Color'])
 
 print (df)
 
-df.to_csv("test.csv")
+print("Time of execution is", now())
