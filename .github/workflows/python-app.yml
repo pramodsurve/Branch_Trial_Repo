@@ -2,8 +2,11 @@
 
 name: On Push Run
 
-on: push
-
+on: 
+  push:
+  schedule:
+    - cron: '5 * * * *' # every five minutes
+    
 env:
   DEVOPS_DIR: devops
 
