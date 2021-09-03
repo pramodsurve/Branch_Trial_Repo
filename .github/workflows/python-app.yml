@@ -1,6 +1,6 @@
 # This workflow is a trial workflow for Python
 
-name: On Push Run
+name: Scheduled and Push Trigger
 
 on: 
   schedule:
@@ -8,23 +8,23 @@ on:
   push:
     
 env:
-  DEVOPS_DIR: devops
+  DEVOPS_DIR: Myrepo
 
 jobs:
-  hello-world:
-    name: First_Workflow
+  run_workflow:
+    name: My_First_Workflow
     runs-on: ubuntu-latest
     steps:
-    - name: Check-out devops repository
+    - name: Check-out Myrepo repository
       uses: actions/checkout@v2
       with:
         repository: pramodsurve/Branch_Trial_Repo
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install Pandas
+    - name: Install Python Packages
       run:
         python -m pip install pandas datetime
 
-    - name: Hello World
+    - name: Run Python Script
       run: python Test.py
       shell: sh
