@@ -7,6 +7,8 @@ Created on Fri Sep  3 13:53:53 2021
 
 import pandas as pd
 
+from datetime import datetime
+
 cars = {'Brand': ['Civic', 'Corolla'],
       'Color': ['Blue', 'Grey']
       }
@@ -15,4 +17,4 @@ df = pd.DataFrame(cars, columns= ['Brand', 'Color'])
 
 print (df)
 
-print("Time of execution is", now())
+print("Time of execution is", datetime.now())
