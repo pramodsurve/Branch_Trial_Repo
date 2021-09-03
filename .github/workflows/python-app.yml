@@ -5,6 +5,7 @@ name: On Push Run
 on: 
   schedule:
   - cron: '*/5 * * * *'
+  push:
     
 env:
   DEVOPS_DIR: devops
